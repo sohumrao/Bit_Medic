@@ -86,7 +86,7 @@ if os.getenv('GAE_APPLICATION', None):
             'HOST': '34.86.79.245',
             'USER': 'bitmedic',
             'PASSWORD': os.getenv('SQL_PASSWORD'),
-            'NAME': 'bitmedic4',
+            'NAME': 'bitmedic5',
         }
     }
 else:
