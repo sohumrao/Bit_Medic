@@ -220,7 +220,6 @@ def createpp(request):
             patient.medcond = request.POST.get("conditions")
         if(request.POST.get("dob")):
             patient.dob = request.POST.get("dob")
-        if(request.POST.get("gender")):
             patient.gender = request.POST.get("gender")
         if(request.POST.get("phone")):
             patient.phone = request.POST.get("phone")
