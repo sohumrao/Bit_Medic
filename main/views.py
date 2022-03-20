@@ -96,7 +96,6 @@ class RegisterPage(FormView):
                 p.save()
             else:
                 d = Doctor(user=self.request.user)
-                d.degree = "None"
                 d.save()
 
         return super(RegisterPage, self).form_valid(form)
@@ -246,7 +245,6 @@ def createdp(request):
         doctor = Doctor.objects.get(user=request.user)
         doctor.special = request.POST.get("special")
         doctor.job = request.POST.get("job")
-        doctor.degree = request.POST.get("degree")
         doctor.save()
         return redirect('home')
     return render(request, "main/createdp.html")
