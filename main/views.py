@@ -96,6 +96,7 @@ class RegisterPage(FormView):
                 p.save()
             else:
                 d = Doctor(user=self.request.user)
+                d.degree = "None"
                 d.save()
 
         return super(RegisterPage, self).form_valid(form)
